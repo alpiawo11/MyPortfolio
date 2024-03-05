@@ -1,0 +1,339 @@
+    body, html {
+      font-family: 'Poppins', sans-serif !important;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+    }
+
+    .collapse:not(.show) {
+        display: none;
+      }
+      
+    .collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+    }
+
+    .dropup,
+    .dropend,
+    .dropdown,
+    .dropstart,
+    .dropup-center,
+    .dropdown-center {
+    position: relative;
+    }
+
+    .dropdown-toggle {
+    white-space: nowrap;
+    }
+    .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    }
+    .dropdown-toggle:empty::after {
+    margin-left: 0;
+    }
+
+
+    .portfolio .portfolio-item {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        max-width: 25rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+      .portfolio .portfolio-item .portfolio-item-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+        background-color: rgba(48, 129, 221, 0.7);
+        ;
+      }
+      .portfolio .portfolio-item .portfolio-item-caption:hover {
+        opacity: 1;
+      }
+      .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+        font-size: 1.5rem;
+      }
+      
+      .portfolio-modal .btn-close {
+        color: #1a45bc;
+        font-size: 2rem;
+        padding: 1rem;
+      }
+      .portfolio-modal .portfolio-modal-title {
+        font-size: 2.25rem;
+        line-height: 2rem;
+      }
+      @media (min-width: 992px) {
+        .portfolio-modal .portfolio-modal-title {
+          font-size: 3rem;
+          line-height: 2.5rem;
+        }
+      }
+
+      .page-section {
+        padding: 6rem 0;
+        background-image: url();
+      }
+      .page-section .page-section-heading {
+        font-size: 2.25rem;
+        line-height: 2rem;      }
+      @media (min-width: 992px) {
+        .page-section .page-section-heading {
+          font-size: 3rem;
+          line-height: 2.5rem;
+        }
+      }
+      
+      .lead {
+        float: left;
+      }
+    /* Style untuk navbar */
+    .navbar {
+        /* background-color: transparent !important; Warna background navbar */
+        padding: 0.5rem 2rem; /* Mengatur padding */
+        background-color: rgba(31, 64, 211, 0.308)!important;
+        transition: 0.5s;
+
+    }
+
+    .navbar:hover {
+        backdrop-filter: blur(10px) !important;
+        /* background-color: rgba(31, 64, 211, 0.616)!important; */
+
+    }
+
+    .navbar .navbar-brand {
+        color: #f8f9fa !important; /* Warna teks brand */
+        font-weight: bold; /* Membuat teks menjadi tebal */
+    }
+
+    .navbar .navbar-nav .nav-link {
+        color: #f8f9fa !important; /* Warna teks link */
+        text-align: center;
+        /* backdrop-filter: blur(10px); */
+
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+        color: #f8f9fa !important; /* Warna teks link */
+        background-color: #007bff;
+        text-align: center;
+    }
+
+    /* .navbar-toggler { */
+        /* border-color: #f8f9fa !important; Warna border tombol */
+    /* } */
+
+    /* Style untuk masthead */
+    /* .masthead {
+        /* background-color: #6c757d; Warna background */
+        /* color: #fff; Warna teks */
+        /* padding: 15rem 0; Mengatur padding */
+    /* } */
+
+    
+    header {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .masthead-avatar {
+        border-radius: 50%; /* Membuat gambar menjadi bulat */
+        max-width: 150px; /* Mengatur lebar maksimal */
+        border: 5px solid #fff; /* Membuat border putih */
+    }
+
+    .masthead-subheading {
+      letter-spacing: 3px;
+    }
+  
+  /* Style tambahan untuk section */
+  /* #about .lead{
+      float: left;
+  }
+   */
+  /* Menyesuaikan padding pada row untuk memastikan gambar tidak terlalu dekat dengan teks */
+
+    .masthead-heading {
+      font-weight: 400;
+    }
+
+    .divider-custom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divider-custom-line {
+        width: 50px;
+        height: 2px;
+        background-color: #f8f9fa; /* Warna garis */
+    }
+
+    /* Style untuk portfolio */
+    .portfolio-item {
+        transition: transform 0.2s; /* Menambahkan animasi */
+    }
+
+    .portfolio-item:hover {
+        transform: scale(1.05); /* Membuat efek zoom saat di-hover */
+    }
+
+    #head-about {
+      padding-bottom: 5%;
+    }
+
+    
+    #about{
+      /* margin-top:; */
+    
+    padding-block: 8%;
+    background-color: #ced4da;  
+    }
+
+    #bio {
+      position: relative;
+      bottom: 60%;
+    }
+
+    #me {
+      padding-bottom: 5%;
+    }
+
+    @media (max-width: 768px) {
+      .page-section-heading {
+        font-size: 2rem; /* Ukuran font lebih kecil pada layar kecil */
+        position: relative;
+        margin-bottom: -15%;
+        padding-bottom: 3%;
+      }
+    
+      #bio {
+        padding: 15%;
+        position: relative;
+        right:-25%;
+        
+        float: end;
+        /* padding: 10%;   */
+      }
+      
+      #me{
+        font-size: 15px;
+        font-weight:300 ;
+        letter-spacing: -0.5px;
+        margin-left: 40%;
+        /* backdrop-filter: blur(3px); */
+        color: #495057;
+      }
+
+      .col-lg-7 {
+        margin-bottom: -15% ;
+      }
+
+      .lead {
+        float: right;
+        margin-right: 6%;
+        
+        text-align: right; /* Teks diatur ke kanan pada layar kecil */
+        font-size: 1rem; /* Ukuran font lebih kecil pada layar kecil */
+        color: #495057;
+      }
+    
+      .container {
+        max-width: 100%;
+        margin:0px ; /* Lebar container lebih kecil pada layar kecil */
+      }
+    }
+
+    /* Style untuk about section */
+    .page-section .lead p{
+        padding: 4rem 0; 
+        font-size: 10px;
+    }
+
+    /* Style untuk contact section */
+    #contact {
+        background-color: #f8f9fa; /* Warna background */
+        color: #495057; /* Warna teks */
+    }
+
+    .form-control {
+        border-radius: 0; /* Menghilangkan border radius */
+        border: 2px solid #ced4da; /* Mengatur border */
+    }
+
+    .btn-primary {
+        background-color: #007bff; /* Warna background */
+        border: none; /* Menghilangkan border */
+    }
+
+    .btn-outline-light {
+        border-color: #f8f9fa; /* Warna border */
+        color: #f8f9fa; /* Warna teks */
+    }
+
+    .btn-outline-light:hover {
+        background-color: #f8f9fa; /* Warna background saat di-hover */
+        color: #343a40; /* Warna teks saat di-hover */
+    }
+
+    /* Menyesuaikan tampilan pada perangkat mobile */
+    @media (max-width: 768px) {
+        .masthead-heading {
+            font-size: 1.5rem; /* Mengatur ukuran font */
+        }
+    }
+
+    .footer {
+      margin-top: 20%;
+    }
+
+    .footer-column-spacing {
+      margin-right: 15px; /* Atur sesuai kebutuhan */
+      margin-left: 15px; /* Atur sesuai kebutuhan */
+  }
+
+  /* Opsi tambahan: Gaya untuk footer jika diperlukan */
+  .footer {
+      background-color: #f8f9fa; /* Warna latar belakang */
+      color: #6c757d; /* Warna teks */
+      padding: 40px 0; /* Padding atas dan bawah */
+  }
+
+  .footer a {
+      color: #111111; /* Warna link */
+  }
+
+  .footer a:hover {
+      text-decoration: none; /* Opsi untuk menghapus underline pada hover */
+  }
+
